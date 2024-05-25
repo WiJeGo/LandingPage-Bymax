@@ -1,1 +1,1 @@
-https://salvadoorssalinas.github.io/BymaxAssistant/
+https://WiJeGo.github.io/BymaxAssistant/
