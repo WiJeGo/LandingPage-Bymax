@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bymax Assistant CARACTERITICAS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="logo" width="100" height="100" id="logo" style="cursor: pointer;">
+            <script>
+                document.getElementById("logo").addEventListener("click", function() {
+                    window.location.href = "index.html";
+                });
+            </script>
+            <a href="index2.html">Sobre Nosotros</a>
+            <a href="index3.html">Características</a>
+            <a href="index4.html">Contáctanos</a>
+            <a href="index5.html">Descargas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="caracteristicas">
+            <h2>Caracteristicas</h2>
+            <div class="feature-container">
+                <div class="feature">
+                    <img src="images/comment-medical-solid.svg" alt="Asistente Médico" width="140" height="140">
+                    <h3>Asistente Médico Virtual Disponible 24/7</h3>
+                    <p>Nuestro asistente virtual médico está siempre a tu disposición, sin importar la hora o el día. Obtén orientación médica instantánea y tranquilidad en cualquier momento, desde la comodidad de tu hogar.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/stethoscope-solid.svg" alt="Diagnósticos Precisos" width="140" height="140">
+                    <h3>Diagnósticos Precisos en Tiempo Real</h3>
+                    <p>Con nuestra tecnología de vanguardia, ofrecemos diagnósticos médicos precisos al instante. Utilizamos inteligencia artificial y datos médicos confiables para brindarte evaluaciones detalladas y recomendaciones personalizadas sin esperas innecesarias.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/face-laugh-beam-solid.svg" alt="Interacción Personalizada" width="140" height="140">
+                    <h3>Interacción Personalizada y Amigable</h3>
+                    <p>Nuestro asistente virtual médico te ofrece una experiencia personalizada y amigable, con un lenguaje claro y comprensible. Además de información médica, te brindamos apoyo emocional para que te sientas acompañado en todo momento.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/user-doctor-solid.svg" alt="Acceso a Profesionales" width="140" height="140">
+                    <h3>Acceso a Profesionales Médicos en Línea</h3>
+                    <p>En caso de necesitar atención más especializada, puedes conectarte con profesionales médicos reales a través de nuestra Plataforma: Programa citas médicas, obtén consultas adicionales y asegúrate de recibir la atención adecuada según tus necesidades específicas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>Descubre al equipo apasionado detrás de esta plataforma médica y nuestra misión de conectar a nuestros usuarios la atención que necesitan.</p>
+        </div>
+        <nav>
+            <a href="index2"><button class="sobre-btn">Sobre nosotros</button></a>
+            <a href="index.html">Síguenos:</a>
+            <a href="#"><img src="images/whatsapp.svg" alt="Whatsapp" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" style="filter: invert(100%);"></a>
+        </nav>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+                
+          window.addEventListener('scroll', () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        section.classList.add('in-viewport');
+                    } else {
+                        section.classList.remove('in-viewport');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

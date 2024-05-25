@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bymax Assistant SOBRE NOSOTROS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="logo" width="100" height="100" id="logo" style="cursor: pointer;">
+            <script>
+                document.getElementById("logo").addEventListener("click", function() {
+                    window.location.href = "index.html";
+                });
+            </script>
+            <a href="index2.html">Sobre Nosotros</a>
+            <a href="index3.html">Características</a>
+            <a href="index4.html">Contáctanos</a>
+            <a href="index5.html">Descargas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="mission-vision">
+              <div class="mission heart-container">
+                <img src="images/corazon.png" alt="Corazón" class="heart-background">
+                <div class="text-over-heart">
+                  <h3>Nuestra Misión</h3>
+                  <p>Llevamos la atención médica a un nivel superior, proporcionando a los usuarios un acceso inmediato a una asistencia médica virtual confiable y efectiva, en cualquier momento y lugar.</p>
+                </div>
+              </div>
+              <div class="logo">
+                <img src="images/logo.png" alt="Logo de Bymax Assistant">
+              </div>
+              <div class="vision heart-container">
+                <img src="images/corazon.png" alt="Corazón" class="heart-background">
+                <div class="text-over-heart">
+                  <h3>Nuestra Visión</h3>
+                  <p>Aspiramos a convertirnos en líderes en el campo de la asistencia médica virtual, empoderando a las personas para que tomen el control de su salud a través de nuestra aplicación.</p>
+                </div>
+              </div>
+            </div>
+            <div class="company-info">
+                    <h3>Somos StrattonLabs</h3>
+                    <p>Somos una startup fundada por un equipo de 5 estudiantes universitarios apasionados y comprometidos con la creación de soluciones innovadoras en el campo de la salud. Nuestra meta es desarrollar una aplicación de Asistencia Virtual Médica que utiliza inteligencia artificial para brindar accesibilidad instantánea a la atención médica.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>Descubre al equipo apasionado detrás de esta plataforma médica y nuestra misión de conectar a nuestros usuarios la atención que necesitan.</p>
+        </div>
+        <nav>
+            <a href="#index2"><button class="sobre-btn">Sobre nosotros</button></a>
+            <a href="index.html">Síguenos:</a>
+            <a href="#"><img src="images/whatsapp.svg" alt="Whatsapp" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" style="filter: invert(100%);"></a>
+        </nav>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+                
+          window.addEventListener('scroll', () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        section.classList.add('in-viewport');
+                    } else {
+                        section.classList.remove('in-viewport');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

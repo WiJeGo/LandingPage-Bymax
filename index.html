@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bymax Assistant INICIO</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="logo" width="100" height="100" id="logo" style="cursor: pointer;">
+                <script>
+                    document.getElementById("logo").addEventListener("click", function() {
+                        window.location.href = "index.html";
+                    });
+                </script>
+            <a href="index2.html">Sobre Nosotros</a>
+            <a href="index3.html">Características</a>
+            <a href="index4.html">Contáctanos</a>
+            <a href="index5.html">Descargas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h2>¡Bienvenido a Bymax Assistant!</h2>
+                    <h2>Para una vida más saludable, al alcance de tu mano.</h2>
+                    <a href="index5.html"><button class="hero-btn">Descargar</button></a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/persona-usando-app.jpg" alt="Persona usando la aplicación" width="500" height="500">
+                </div>
+            </div>
+            <div class="description">
+                <div class="hearts-design left-heart">
+                  <img src="images/Vector.png" alt="Corazón">
+                </div>
+                <div class="description-image">
+                  <img src="images/persona-mayor.jpg" alt="Persona mayor" width="387" height="232">
+                </div>
+                <div class="hearts-design right-heart">
+                  <img src="images/corazon.png" alt="Corazón" width="330" height="250">
+                  <div class="description-text">
+                        <p>"Bymax Assistant" es una aplicación de diagnósticos y consultas médicas que utiliza la inteligencia artificial para atender a los usuarios, brindándoles un servicio de calidad y eficiente.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>Descubre al equipo apasionado detrás de esta plataforma médica y nuestra misión de conectar a nuestros usuarios la atención que necesitan.</p>
+        </div>
+        <nav>
+            <a href="index2.html"><button class="sobre-btn">Sobre nosotros</button></a>
+            <a href="index.html">Síguenos:</a>
+            <a href="#"><img src="images/whatsapp.svg" alt="Whatsapp" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" style="filter: invert(100%);"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" style="filter: invert(100%);"></a>
+        </nav>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+                
+          window.addEventListener('scroll', () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        section.classList.add('in-viewport');
+                    } else {
+                        section.classList.remove('in-viewport');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

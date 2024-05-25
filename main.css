@@ -1,0 +1,418 @@
+/* Estilos generales */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Average';
+    background-image: url('https://png.pngtree.com/back_origin_pic/03/54/34/04e74da34779eb94cb05375b64493e62.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1; 
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+  }
+
+
+  header {
+    background-color: #7fc6f900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav img {
+    margin: center; 
+    margin-left: auto;
+    margin-right: 20px;
+    width: 7%;
+    height: auto; 
+  }
+  
+/* Estilos para los enlaces del menú de navegación */
+header nav a {
+  margin: 0 10px;
+  background-color: #ffffff00;
+  color: #333;
+  text-decoration: none;
+  margin: 0 3%;
+  padding: 1% 2%;
+  border: 2px solid #0D0E30;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+  header nav a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  main {
+    background-color: #0D0E30;
+    opacity: 10;
+    border-radius: 5px; 
+    max-width: 65%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  
+  section {
+    max-width: 100%;
+    background-color: #2B5F9C;
+    border-radius: 30px; 
+    padding: 50px;
+    margin-bottom: 20px;
+    color: #0D0E30;
+  }
+  
+  h2 {
+    color: #0D0E30;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #0D0E30;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
+  }
+  
+  footer .footer-text {
+    flex: 1; 
+    text-align: justify; 
+    margin-left: 100px;
+  }
+  
+  footer nav {
+    flex: 2; 
+    text-align: center; 
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 2;
+    margin-right: 63px;
+  }
+  
+  footer nav img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 40px;
+  }
+  
+  
+  /* Estilos para la sección de inicio */
+  #inicio .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #inicio .hero-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+  }
+  
+  #inicio .hero-image {
+    flex: 1;
+    text-align: center;
+    max-width: 50%; 
+  }
+  
+  #inicio .hero-image img {
+    max-width: 90%;
+    height: auto;  
+  }
+  
+  #contactanos form button,
+  footer .sobre-btn,
+  #inicio .hero-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Average';
+    transition: transform 0.3s; 
+  }
+  #contactanos form button:active,
+  footer .sobre-btn:active,
+  #inicio .hero-btn:active {
+    transform: scale(2);
+  }
+  .description {
+    margin-right: auto;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #0D0E30;
+    border-radius: 30px;
+    padding: 20px;
+    flex-wrap: wrap; /* Agrega flex-wrap para que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  .left-heart,
+  .right-heart {
+    width: 100%; /* Ajusta el ancho a 100% */
+    max-width: 330px; /* Tamaño máximo */
+    min-width: 150px; /* Tamaño mínimo */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+  
+  .left-heart {
+    position: absolute;
+    left: -117px; /* Ajusta este valor según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .right-heart {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .description-image {
+    margin-left: -30%; /* Ajusta la posición relativa */
+    width: 100%;
+    max-width: 387px; /* Tamaño máximo */
+    min-width: 150px; /* Tamaño mínimo */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+  
+  #inicio .description-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ajusta el ancho a 100% */
+    max-width: 300px; /* Tamaño máximo */
+    min-width: 150px; /* Tamaño mínimo */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Media queries para ajustar el diseño en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .description {
+      flex-direction: column; /* Cambia la dirección del flex a columna */
+      padding: 20px; /* Ajusta el padding */
+    }
+  
+    .left-heart,
+    .right-heart {
+      position: static; /* Cambia la posición a estática */
+      transform: none; /* Elimina la transformación */
+      margin: 10px 0; /* Ajusta los márgenes */
+    }
+  
+    .description-image {
+      margin: 0 auto; /* Centra la imagen */
+      padding: 10px 0; /* Ajusta el padding */
+    }
+  
+    #inicio .description-text {
+      position: static; /* Cambia la posición a estática */
+      transform: none; /* Elimina la transformación */
+      width: 90%; /* Ajusta el ancho */
+      max-width: none; /* Elimina el tamaño máximo */
+      margin: 10px auto; /* Ajusta los márgenes */
+    }
+  }
+  
+  /* Estilos para la sección "Sobre Nosotros" */
+  #sobre-nosotros .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+  }
+  
+  #sobre-nosotros .heart-container {
+    position: relative;
+    text-align: center;
+    flex: 1;
+  }
+  
+  #sobre-nosotros .heart-background {
+    width: 100%;
+    height: auto;
+  }
+  
+  #sobre-nosotros .text-over-heart {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    color: #000;
+    text-align: center;
+  }
+  
+  #sobre-nosotros .logo {
+    text-align: center;
+    max-width: 20%;
+  }
+  
+  #sobre-nosotros .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  #sobre-nosotros .company-info {
+    background-color: #7FC6F9;
+    border-radius: 30px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    padding: 20px; 
+  }
+  
+  #sobre-nosotros .company-info h3,
+  #sobre-nosotros .company-info p {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  
+  /* Estilos para la sección "Características" */
+  #caracteristicas .feature-container {
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #caracteristicas .feature {
+    background-color:#7FC6F9 ;
+    border-radius: 30px; 
+    padding: 5px;
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #caracteristicas .feature img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  /* Estilos para la sección "Contáctanos" */
+  #contactanos .social-links {
+    padding: 20px;
+    text-align: center;
+    margin: 1 100px;
+    
+  }
+  
+  #contactanos .social-links a {
+    margin-bottom: 20px;
+    margin: 50px;  
+    padding: 20px;
+  }
+  
+  #contactanos form {
+    padding: 20px;
+    width: 50%;
+    background-color: #7FC6F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Average';
+    margin: 0 auto; 
+    box-sizing: border-box;
+    border-radius: 30px; 
+  }
+  
+  
+  #contactanos form input,
+  #contactanos form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Average';
+  }
+  
+  /* Estilos para la sección "Descargas" */
+  #descargas {
+    padding-top: 11%;
+    text-align: center; 
+
+  }
+
+  #descargas .app-stores,
+  #descargas .google-play {
+      display: inline-block; 
+      vertical-align: middle;
+      margin: 0 60px; 
+  }
+
+  #descargas .google-play a,
+  #descargas .app-stores a {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; 
+  }
+  
+  #descargas .google-play img,
+  #descargas .app-stores img {
+    background-color: #7FC6F9;
+    border-radius: 30px;
+    padding: 40px; 
+    max-width: 160px; 
+    height: auto;
+  }
+  
+  /* Define la animación de fade-in */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Aplica la animación a todas las secciones */
+  section {
+    opacity: 0; /* Inicia con opacidad 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* La animación termina con la sección visible */
+  }
+  
+  /* Asegúrate de que la animación se ejecute cuando la sección entra en el viewport */
+  section:in-viewport {
+    animation-delay: 0.3s; /* Retraso para que la animación no comience inmediatamente */
+  }
+  
+  
+  
+  
